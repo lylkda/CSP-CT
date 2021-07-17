@@ -10,8 +10,6 @@ $("document").ready(function () {
     var def = ["buy or obtain for oneself", "a chart or series of pages showing the days, weeks and months of a particular year", "a person with whom one works with", "wishing to do what is right", "practical contact with and observation of facts or events", "the process of maintaining someone or something", "required to be done, achieved, or present", "a particular time or instance of an event", "a special right, advantage, or immunity granted or available only to a particular person or group", "put forward (someone or something) with approval as being suitable for a particular purpose or role.", "closely connected or appropriate to what is being done or considered", "forming or viewed as a unit apart or by itself", "accomplishing an aim or purpose", "a polite expression of praise or admiration", "have an effect on; make a difference to", "make certain that (something) shall occur or be the case", "of a color intermediate between black and white, as of ashes or lead", "a fundamental truth or proposition that serves as the foundation for a system of belief or behavior or for a chain of reasoning", "not moving or not intended to be moved"];  
 
 
-
-
     function pickWord() {
         var index = Math.floor(Math.random() * word.length);
         chosen = word[index];
@@ -20,8 +18,6 @@ $("document").ready(function () {
         updateLives();
         $('#define').html("<b>Definition:</b> " + def[index]);
     }
-
-
 
     function updateGuess(e) {
         for (var i = 0; i < chosenLetters.length; i++) {
@@ -68,7 +64,6 @@ $("document").ready(function () {
         return new Promise(function (res, rej) {
             res('view')
         });
-
     }
 
     function updateLives() {
@@ -106,15 +101,13 @@ $("document").ready(function () {
         chosen = null;
         chosenLetters = null;
         pickWord();
-        wordView();
         updatePage();
     }
-    // Record the guesses
+
     $(document).on("keypress", function (e) {
         var k = e.keyCode;
         if ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8){
             updatePage(e.key);
-            // wordView();
         }
     })
     pickWord();
