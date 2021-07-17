@@ -1,0 +1,29 @@
+#wrapper{
+    margin: auto;
+    width: 80%;
+    text-align:center;
+}
+
+#wrapper .child{
+    margin-top: 50px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+#container .child{
+    width: 80%;
+    border:dotted;
+    padding-bottom: 25px;
+    margin-top: 50px;
+}
+
+.child{
+    margin: 10px 15px;
+}
+
+body{
+    background-color: black;
+    color:white;
+}

@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <div id="wrapper">
+          <h1>Hangman</h1>
+          <h3>Learn some commonly misspelled/misused words! Press any key to guess.</h3>
+            <div id="define" class="child">
+            </div>
+            <div id="word" class="child">
+            </div>
+            <div id="container">
+                <div class="child">
+                    <h3>Guessed Letters</h3>
+                    <div id="guess"></div>
+                </div>
+                <div class="child">
+                    <h3>Numbers of guesses left</h3>
+                    <div id="lives"></div>
+                </div>
+                <div class="child">
+                    <h3>Wins</h3>
+                    <div id = "wins">0</div>
+                </div>
+            </div>
+        </div>
+    <audio id="winSound">
+    <source src="yay.wav"></audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="game1.js"></script>
+  </body>
