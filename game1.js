@@ -16,7 +16,6 @@ $("document").ready(function () {
         var index = Math.floor(Math.random() * word.length);
         chosen = word[index];
         chosenLetters = chosen.split("");
-        console.log("chosen", chosen);
         wordView();
         updateLives();
         $('#define').html("<b>Definition:</b> " + def[index]);
